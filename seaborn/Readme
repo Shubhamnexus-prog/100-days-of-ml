@@ -1,0 +1,224 @@
+# 📊 Seaborn: Basic to Advanced
+
+A complete hands-on guide to learning **Seaborn** for Data Visualization in Python. This repository covers everything from the basics to advanced visualization techniques with practical examples.
+
+---
+
+## 📌 About
+
+Seaborn is a powerful Python library built on top of Matplotlib that makes it easy to create attractive and informative statistical graphics.
+
+This repository is designed for:
+- 🟢 Beginners learning Data Visualization
+- 🟡 Data Analysts
+- 🔵 Machine Learning Enthusiasts
+- 🟣 Data Science Students
+
+---
+
+## 📚 Topics Covered
+
+### ✅ 1. Introduction
+- What is Seaborn?
+- Why use Seaborn?
+- Installation
+- Importing Libraries
+
+### ✅ 2. Loading Datasets
+- Built-in Datasets
+- CSV Files
+- Pandas DataFrames
+
+### ✅ 3. Distribution Plots
+- Histplot
+- KDE Plot
+- Displot
+- ECDF Plot
+
+### ✅ 4. Relational Plots
+- Scatter Plot
+- Line Plot
+- Hue, Style, Size
+
+### ✅ 5. Categorical Plots
+- Bar Plot
+- Count Plot
+- Box Plot
+- Violin Plot
+- Strip Plot
+- Swarm Plot
+- Point Plot
+
+### ✅ 6. Matrix Plots
+- Heatmap
+- Correlation Matrix
+- Clustermap
+
+### ✅ 7. Pairwise Visualization
+- Pairplot
+- Jointplot
+
+### ✅ 8. Regression Plots
+- Regplot
+- Lmplot
+
+### ✅ 9. Styling Charts
+- Themes
+- Color Palettes
+- Figure Size
+- Titles
+- Labels
+- Grid Style
+
+### ✅ 10. Advanced Visualization
+- Multiple Subplots
+- Custom Color Maps
+- Annotations
+- FacetGrid
+- PairGrid
+- JointGrid
+
+---
+
+## 🛠 Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+
+---
+
+## 📂 Project Structure
+
+```
+Seaborn-Basic-to-Advanced/
+│
+├── 01_Introduction.ipynb
+├── 02_Loading_Dataset.ipynb
+├── 03_Distribution_Plots.ipynb
+├── 04_Relational_Plots.ipynb
+├── 05_Categorical_Plots.ipynb
+├── 06_Matrix_Plots.ipynb
+├── 07_Pairplot_Jointplot.ipynb
+├── 08_Regression_Plots.ipynb
+├── 09_Styling.ipynb
+├── 10_Advanced_Visualization.ipynb
+│
+├── images/
+├── datasets/
+└── README.md
+```
+
+---
+
+## 🚀 Installation
+
+Clone this repository:
+
+```bash
+git clone https://github.com/Shubhamnexus-prog/100-days-of-ml.git
+```
+
+Go to the project folder:
+
+```bash
+cd 100-days-of-ml
+```
+
+Install required libraries:
+
+```bash
+pip install seaborn matplotlib pandas numpy
+```
+
+Launch Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+---
+
+## 📈 Sample Code
+
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+tips = sns.load_dataset("tips")
+
+sns.scatterplot(
+    data=tips,
+    x="total_bill",
+    y="tip",
+    hue="sex"
+)
+
+plt.title("Scatter Plot")
+plt.show()
+```
+
+---
+
+## 🎯 Learning Outcomes
+
+After completing this repository, you will be able to:
+
+- Create beautiful statistical visualizations
+- Customize plots professionally
+- Analyze datasets visually
+- Build publication-quality charts
+- Apply Seaborn in Machine Learning projects
+- Improve Exploratory Data Analysis (EDA)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push to GitHub
+5. Open a Pull Request
+
+---
+
+## ⭐ Support
+
+If you found this repository helpful:
+
+⭐ Star the repository
+
+🍴 Fork it
+
+📢 Share it with others
+
+---
+
+## 👨‍💻 Author
+
+**Shubham Gupta**
+
+- AI & Data Science Enthusiast
+- Machine Learning Engineer
+- Python Developer
+- Kaggle Notebook Master
+
+GitHub:
+https://github.com/Shubhamnexus-prog
+
+LinkedIn:
+(Add Your LinkedIn Profile)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+Happy Learning! 🚀

@@ -1,0 +1,278 @@
+# 🌐 Web Scraping with BeautifulSoup
+
+A beginner-friendly to advanced guide for **Web Scraping using Python and BeautifulSoup**. This project demonstrates how to extract data from websites, parse HTML, clean the collected information, and export it into structured formats like CSV and Excel.
+
+---
+
+# 📌 About
+
+**BeautifulSoup** is a Python library used to parse HTML and XML documents. It makes it easy to navigate, search, and extract data from web pages.
+
+This project covers the complete web scraping workflow using:
+
+- 🐍 Python
+- 🌐 Requests
+- 🍲 BeautifulSoup (bs4)
+- 📊 Pandas
+
+---
+
+# 🚀 Technologies Used
+
+- Python 3.x
+- Requests
+- BeautifulSoup4 (bs4)
+- Pandas
+- Jupyter Notebook
+
+---
+
+# 📚 Topics Covered
+
+## ✅ Introduction to Web Scraping
+
+- What is Web Scraping?
+- How Web Scraping Works
+- Applications of Web Scraping
+- Ethical Web Scraping
+
+---
+
+## ✅ Installing Libraries
+
+```bash
+pip install requests
+pip install beautifulsoup4
+pip install pandas
+```
+
+---
+
+## ✅ Sending HTTP Requests
+
+- GET Request
+- Response Object
+- Status Codes
+- Request Headers
+
+---
+
+## ✅ Parsing HTML
+
+- HTML Structure
+- HTML Tags
+- HTML Attributes
+- CSS Selectors
+
+---
+
+## ✅ BeautifulSoup Basics
+
+- Creating BeautifulSoup Object
+- prettify()
+- find()
+- find_all()
+- select()
+- select_one()
+
+---
+
+## ✅ Extracting Data
+
+- Titles
+- Prices
+- Ratings
+- Images
+- Product Links
+- Availability
+
+---
+
+## ✅ Data Cleaning
+
+- Remove Currency Symbols
+- Convert Data Types
+- Handle Missing Values
+- Remove Duplicates
+
+---
+
+## ✅ Exporting Data
+
+- CSV
+- Excel
+- JSON
+
+---
+
+# 📂 Project Structure
+
+```
+Web-Scraping-BeautifulSoup/
+│
+├── 01_Introduction.ipynb
+├── 02_HTTP_Requests.ipynb
+├── 03_HTML_Parsing.ipynb
+├── 04_BeautifulSoup_Basics.ipynb
+├── 05_Data_Extraction.ipynb
+├── 06_BookStore_Scraper.ipynb
+├── 07_Data_Cleaning.ipynb
+├── 08_Save_to_CSV.ipynb
+│
+├── datasets/
+├── output/
+│   ├── books.csv
+│   ├── books.xlsx
+│   └── books.json
+│
+└── README.md
+```
+
+---
+
+# 🛠 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Shubhamnexus-prog/100-days-of-ml.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd 100-days-of-ml
+```
+
+Install required libraries:
+
+```bash
+pip install requests beautifulsoup4 pandas
+```
+
+---
+
+# 📌 Sample Code
+
+```python
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://books.toscrape.com/"
+
+response = requests.get(url)
+
+soup = BeautifulSoup(response.text, "html.parser")
+
+books = soup.find_all("article", class_="product_pod")
+
+for book in books:
+    title = book.h3.a["title"]
+    price = book.find("p", class_="price_color").text
+
+    print(title)
+    print(price)
+    print("-" * 30)
+```
+
+---
+
+# 📊 Workflow
+
+```
+Website
+   │
+   ▼
+Requests Library
+   │
+   ▼
+HTML Source
+   │
+   ▼
+BeautifulSoup Parser
+   │
+   ▼
+Extract Required Data
+   │
+   ▼
+Clean Data
+   │
+   ▼
+Pandas DataFrame
+   │
+   ▼
+CSV / Excel / JSON
+```
+
+---
+
+# 🎯 Learning Outcomes
+
+After completing this project, you will be able to:
+
+- Understand the fundamentals of web scraping
+- Send HTTP requests using the Requests library
+- Parse HTML using BeautifulSoup
+- Extract text, links, images, and tables
+- Clean scraped data with Pandas
+- Export data into CSV, Excel, and JSON formats
+- Build real-world web scraping projects
+
+---
+
+# 📁 Example Project
+
+**Book Store Scraper**
+
+Extracts:
+
+- 📖 Book Title
+- 💰 Price
+- ⭐ Rating
+- 📦 Availability
+- 🔗 Product URL
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push to your fork
+5. Open a Pull Request
+
+---
+
+# ⭐ Support
+
+If you found this project helpful:
+
+- ⭐ Star this repository
+- 🍴 Fork it
+- 📢 Share it with others
+
+---
+
+# 👨‍💻 Author
+
+**Shubham Gupta**
+
+- AI & Data Science Enthusiast
+- Machine Learning Engineer
+- Python Developer
+- Kaggle Notebook Master
+
+**GitHub:** https://github.com/Shubhamnexus-prog
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 🚀 Happy Coding & Happy Scraping!
