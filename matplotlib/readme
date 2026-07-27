@@ -1,0 +1,137 @@
+# Matplotlib Plot Examples
+
+A Python project demonstrating the most commonly used plots in Matplotlib with clear examples.
+
+## Features
+
+- Line Plot
+- Bar Chart
+- Horizontal Bar Chart
+- Pie Chart
+- Scatter Plot
+- Histogram
+- Box Plot
+- Violin Plot
+- Area Plot
+- Stem Plot
+- Step Plot
+- Stack Plot
+- Error Bar Plot
+- Hexbin Plot
+- Polar Plot
+- Multiple Line Plot
+- Subplots
+- Heatmap
+- Contour Plot
+- Filled Contour Plot
+- 3D Line Plot
+- 3D Scatter Plot
+- 3D Surface Plot
+
+## Installation
+
+```bash
+git clone https://github.com/yourusername/matplotlib-plot-examples.git
+cd matplotlib-plot-examples
+pip install matplotlib numpy
+```
+
+## Usage
+
+Run any example:
+
+```bash
+python line_plot.py
+```
+
+## Requirements
+
+- Python 3.9+
+- Matplotlib
+- NumPy
+
+Install dependencies:
+
+```bash
+pip install matplotlib numpy
+```
+
+## Project Structure
+
+```
+matplotlib-plot-examples/
+│── line_plot.py
+│── bar_chart.py
+│── pie_chart.py
+│── scatter_plot.py
+│── histogram.py
+│── box_plot.py
+│── violin_plot.py
+│── heatmap.py
+│── contour_plot.py
+│── surface3d.py
+│── requirements.txt
+│── README.md
+```
+
+## Supported Plot Types
+
+| Plot Type | Function |
+|-----------|----------|
+| Line Plot | `plt.plot()` |
+| Bar Chart | `plt.bar()` |
+| Horizontal Bar | `plt.barh()` |
+| Pie Chart | `plt.pie()` |
+| Scatter Plot | `plt.scatter()` |
+| Histogram | `plt.hist()` |
+| Box Plot | `plt.boxplot()` |
+| Violin Plot | `plt.violinplot()` |
+| Area Plot | `plt.fill_between()` |
+| Step Plot | `plt.step()` |
+| Stem Plot | `plt.stem()` |
+| Stack Plot | `plt.stackplot()` |
+| Error Bar | `plt.errorbar()` |
+| Hexbin Plot | `plt.hexbin()` |
+| Polar Plot | `plt.polar()` |
+| Heatmap | `plt.imshow()` |
+| Contour Plot | `plt.contour()` |
+| Filled Contour | `plt.contourf()` |
+| 3D Line | `ax.plot3D()` |
+| 3D Scatter | `ax.scatter3D()` |
+| 3D Surface | `ax.plot_surface()` |
+
+## Example
+
+```python
+import matplotlib.pyplot as plt
+
+x = [1,2,3,4,5]
+y = [2,4,6,8,10]
+
+plt.plot(x, y, marker="o")
+plt.title("Simple Line Plot")
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.grid(True)
+plt.show()
+```
+
+## Contributing
+
+Contributions are welcome! Feel free to fork the repository, improve the examples, and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Author
+
+**Shubham Gupta**
+
+- Python Developer
+- Open Source Contributor
+- GitHub: https://github.com/yourusername
+
+---
+
+⭐ If you found this repository useful, please consider giving it a star!
